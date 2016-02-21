@@ -1,4 +1,4 @@
-![PHPMailer](https://raw.github.com/PHPMailer/PHPMailer/master/examples/images/phpmailer.png)
+![PHPMailer](https://raw.github.com/whera/PHPMailer/master/examples/images/phpmailer.png)
 
 # PHPMailer - A full-featured email creation and transfer class for PHP
 
@@ -38,16 +38,16 @@ software availability and distribution.
 
 ## Installation & loading
 
-PHPMailer is available via [Composer/Packagist](https://packagist.org/packages/phpmailer/phpmailer) (using semantic versioning), so just add this line to your `composer.json` file:
+PHPMailer is available via [Composer/Packagist](https://packagist.org/packages/wsw/phpmailer) (using semantic versioning), so just add this line to your `composer.json` file:
 
 ```json
-"phpmailer/phpmailer": "~5.2"
+"wsw/phpmailer": "~5.2"
 ```
 
 or
 
 ```sh
-composer require phpmailer/phpmailer
+composer require wsw/phpmailer
 ```
 
 If you want to use the Gmail XOAUTH2 authentication class, you will also need to add a dependency on the `league/oauth2-client` package.
@@ -105,25 +105,25 @@ if(!$mail->send()) {
 }
 ```
 
-You'll find plenty more to play with in the [examples](https://github.com/PHPMailer/PHPMailer/tree/master/examples) folder.
+You'll find plenty more to play with in the [examples](https://github.com/whera/PHPMailer/tree/master/examples) folder.
 
 That's it. You should now be ready to use PHPMailer!
 
 ## Localization
-PHPMailer defaults to English, but in the [language](https://github.com/PHPMailer/PHPMailer/tree/master/language/) folder you'll find numerous (46 at the time of writing!) translations for PHPMailer error messages that you may encounter. Their filenames contain [ISO 639-1](http://en.wikipedia.org/wiki/ISO_639-1) language code for the translations, for example `fr` for French. To specify a language, you need to tell PHPMailer which one to use, like this:
+PHPMailer defaults to English, but in the [language](https://github.com/whera/PHPMailer/tree/master/language/) folder you'll find numerous (46 at the time of writing!) translations for PHPMailer error messages that you may encounter. Their filenames contain [ISO 639-1](http://en.wikipedia.org/wiki/ISO_639-1) language code for the translations, for example `fr` for French. To specify a language, you need to tell PHPMailer which one to use, like this:
 
 ```php
 // To load the French version
 $mail->setLanguage('fr', '/optional/path/to/language/directory/');
 ```
 
-We welcome corrections and new languages - if you're looking for corrections to do, run the [phpmailerLangTest.php](https://github.com/PHPMailer/PHPMailer/tree/master/test/phpmailerLangTest.php) script in the tests folder and it will show any missing translations.
+We welcome corrections and new languages - if you're looking for corrections to do, run the [phpmailerLangTest.php](https://github.com/whera/PHPMailer/tree/master/test/phpmailerLangTest.php) script in the tests folder and it will show any missing translations.
 
 ## Documentation
 
-Examples of how to use PHPMailer for common scenarios can be found in the [examples](https://github.com/PHPMailer/PHPMailer/tree/master/examples) folder. If you're looking for a good starting point, we recommend you start with [the Gmail example](https://github.com/PHPMailer/PHPMailer/tree/master/examples/gmail.phps).
+Examples of how to use PHPMailer for common scenarios can be found in the [examples](https://github.com/whera/PHPMailer/tree/master/examples) folder. If you're looking for a good starting point, we recommend you start with [the Gmail example](https://github.com/whera/PHPMailer/tree/master/examples/gmail.phps).
 
-There are tips and a troubleshooting guide in the [GitHub wiki](https://github.com/PHPMailer/PHPMailer/wiki). If you're having trouble, this should be the first place you look as it's the most frequently updated.
+There are tips and a troubleshooting guide in the [GitHub wiki](https://github.com/whera/PHPMailer/wiki). If you're having trouble, this should be the first place you look as it's the most frequently updated.
 
 Complete generated API documentation is [available online](http://phpmailer.github.io/PHPMailer/).
 
@@ -133,7 +133,7 @@ If the documentation doesn't cover what you need, search the [many questions on 
 
 ## Tests
 
-There is a PHPUnit test script in the [test](https://github.com/PHPMailer/PHPMailer/tree/master/test/) folder.
+There is a PHPUnit test script in the [test](https://github.com/whera/PHPMailer/tree/master/test/) folder.
 
 Build status: [![Build Status](https://travis-ci.org/PHPMailer/PHPMailer.svg)](https://travis-ci.org/PHPMailer/PHPMailer)
 
